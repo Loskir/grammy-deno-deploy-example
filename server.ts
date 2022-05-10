@@ -24,8 +24,6 @@ serve({
     return json({ ok: true })
   },
   '/': () => {
-    return new Response("Hello World!", {
-      headers: { "content-type": "text/plain" },
-    });
+    return json({hello: 'world'})
   }
 });
